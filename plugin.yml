@@ -3,3 +3,12 @@ author: CookieCode
 api: 2.1.0
 version: 1.0
 main: HealthOverHead\Main
+commands:
+ healthoverhead:
+  description: Information developer.
+  aliases: [hoh]
+  permission: hoh.info
+permissions:
+ hoh.info:
+  description: "Information developer."
+  default: true
