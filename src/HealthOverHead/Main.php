@@ -1,9 +1,16 @@
 <?php
 
 namespace HealthOverHead;
-use pocketmine\Server;
-use pocketmine\plugin\PluginBase;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\command\CommandExecutor;
 use pocketmine\Player;
+use pocketmine\plugin\PluginBase;
+use pocketmine\Server;
+use pocketmine\utils\TextFormat;
+use pocketmine\utils\Config;
+use pocketmine\permission\ServerOperator;
+use pocketmine\event\player\PlayerCommandPreprocessEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\scheduler\PluginTask;
