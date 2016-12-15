@@ -22,4 +22,20 @@ class Main extends PluginBase implements Listener{
     public function onDisable(){
         $this->getLogger()->info(TextFormat::BLUE . "HealthOverHead disabled.");
     }
+	
+    public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+        switch($command->getName()){
+ 
+            case "healthoverhead":
+
+$sender->sendMessage(TextFormat::YELLOW."------------");
+$sender->sendMessage(TextFormat::GREEN."HealthOverHead created by CookieCode. Twitter : @ImCookieGame");
+$sender->sendMessage(TextFormat::RED."Youtube : ImCookieGame");
+$sender->sendMessage(TextFormat::YELLOW."------------");
+
+
+return true;
+
+}
+}
 }
