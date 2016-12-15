@@ -1,0 +1,5 @@
+name: HealthOverHead
+author: CookieCode
+api: 2.1.0
+version: 1.0
+main: HealthOverHead\Main
