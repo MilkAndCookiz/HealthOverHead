@@ -18,7 +18,7 @@ class Funcion extends PluginTask {
 	public function onRun($tick){
 	  foreach($this->getOwner()->getServer()->getOnlinePlayers() as $p){
 	    $player = $p;
-	    $p->setNameTag($p->getName() . "\n" . ($player->getHealth() / $player->getMaxHealth() * 20)."§c♥");
-	  }
-	}
+	    $p->setNameTag($p->getName() . "§c[" . ($player->getHealth() / $player->getMaxHealth() * 20)."]");
+          }
+     }
 }
