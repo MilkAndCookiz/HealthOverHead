@@ -16,7 +16,15 @@ use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\scheduler\PluginTask;
 use pocketmine\event\entity\EntityDamageEvent;
 
-//Coded by CookieCode.
+ /**
+ *  _____   ______   ______   _  _   _   ______
+ * |  _ _| |  __  | |  __  | | |/ / |_| |  ____|
+ * | |     |      | | |  | | |   /   _  | |___
+ * | |     | |  | | | |  | | |  (   | | |  ___|
+ * | |_ _  | |__| | | |__| | |   \  | | | |____
+ * |_____| |______| |______| |_|\_\ |_| |______|
+ * Coded by Cookie.
+**/
 
 class Main extends PluginBase implements Listener{
   
