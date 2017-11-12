@@ -7,7 +7,15 @@ use pocketmine\scheduler\PluginTask;
 use pocketmine\Plugin;
 use pocketmine\utils\TextFormat;
 
-//Coded by CookieCode.
+ /**
+ *  _____   ______   ______   _  _   _   ______
+ * |  _ _| |  __  | |  __  | | |/ / |_| |  ____|
+ * | |     |      | | |  | | |   /   _  | |___
+ * | |     | |  | | | |  | | |  (   | | |  ___|
+ * | |_ _  | |__| | | |__| | |   \  | | | |____
+ * |_____| |______| |______| |_|\_\ |_| |______|
+ * Coded by Cookie.
+**/
 
 class Funcion extends PluginTask {
 
@@ -16,7 +24,7 @@ class Funcion extends PluginTask {
 		parent::__construct($plugin); 
 	}
 	
-	public function onRun($tick){
+	public function onRun($currentTick){
 	  foreach($this->getOwner()->getServer()->getOnlinePlayers() as $p){
 	    $player = $p;
 	    $p->setNameTag(TextFormat::GREEN . $p->getName() . "§c[" . ($player->getHealth() / $player->getMaxHealth() * 20)."]");

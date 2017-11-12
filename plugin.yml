@@ -1,14 +1,14 @@
 name: HealthOverHead
 author: CookieCode
-api: 2.1.0
-version: 1.0
+api: 3.0.0-ALPHA9
+version: 1.1
 main: HealthOverHead\Main
 commands:
  healthoverhead:
-  description: Information developer.
+  description: Developper information.
   aliases: [hoh]
   permission: hoh.info
 permissions:
  hoh.info:
-  description: "Information developer."
+  description: "Developper information."
   default: true
