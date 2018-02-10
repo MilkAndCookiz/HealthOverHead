@@ -1,10 +1,10 @@
 <?php
 
-namespace HealthOverHead;
+namespace CookieCode\HealthOverHead;
 
 //Commands
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\TextFormat;
+use pocketmine\utils\TextFormat as TF;
 //Events
 use pocketmine\event\Listener;
 //Mains
@@ -23,12 +23,12 @@ use pocketmine\Server;
 class Main extends PluginBase implements Listener{
   
 	public function onEnable(){
-     $this->getLogger()->info(TextFormat::BLUE . "HealthOverHead by CookieCode enabled.");
+     $this->getServer()->getLogger()->info(TF::LIGHT_PURPLE . "[HealthOverHead]" . TF::GREEN . " Plugin enabled by CookieCode");
 		$this->getServer()->getPluginManager()->registerEvents($this,$this);
 	  	$this->getServer()->getScheduler()->scheduleRepeatingTask(new HealthTask($this),10);
 	}
     
 	public function onDisable(){
-        $this->getLogger()->info(TextFormat::BLUE . "HealthOverHead disabled.");
+        $this->getServer()->getLogger()->info(TF::LIGHT_PURPLE . "[HealthOverHead]" . TF::GREEN . " Plugin disabled by CookieCode");
 	}
 }

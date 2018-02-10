@@ -1,6 +1,6 @@
 <?php 
 
-namespace HealthOverHead;
+namespace CookieCode\HealthOverHead;
 
 use pocketmine\{Server, Player};
 use pocketmine\scheduler\PluginTask;
