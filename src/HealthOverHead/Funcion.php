@@ -5,7 +5,7 @@ namespace HealthOverHead;
 use pocketmine\{Server, Player};
 use pocketmine\scheduler\PluginTask;
 use pocketmine\Plugin;
-use pocketmine\utils\TextFormat;
+use pocketmine\utils\TextFormat as TF;
 
  /**
  *  _____   ______   ______   _  _   _   ______
@@ -21,13 +21,17 @@ class Funcion extends PluginTask {
 
 	public function __construct($plugin){
 		$this->plugin = $plugin;		
-		parent::__construct($plugin); 
+		parent::__construct($plugin);
 	}
 	
 	public function onRun($currentTick){
-	foreach($this->getOwner()->getServer()->getOnlinePlayers() as $p){
-		$player = $p;
-		$p->setNameTag(TextFormat::GREEN . $p->getName() . "§c[" . ($player->getHealth() / $player->getMaxHealth() * 20)."]");
+		foreach($this->getOwner()->getServer()->getOnlinePlayers() as $p){
+			$player = $p;
+			if(!$p->isOp()){
+				$p->setNameTag(TF::YELLOW . $p->getName() . "§c[" . ($player->getHealth() / $player->getMaxHealth() * 20)."]");
+			}else{
+				$p->setNameTag(TF::BLUE . $p->getName() . "§c[" . ($player->getHealth() / $player->getMaxHealth() * 20)."]");
+			}
 		}
 	}
 }
