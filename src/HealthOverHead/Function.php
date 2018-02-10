@@ -17,7 +17,7 @@ use pocketmine\utils\TextFormat as TF;
  * Coded by Cookie.
 **/
 
-class Funcion extends PluginTask {
+class Function extends PluginTask {
 
 	public function __construct($plugin){
 		$this->plugin = $plugin;		
