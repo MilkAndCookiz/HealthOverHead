@@ -30,7 +30,7 @@ class Main extends PluginBase implements Listener{
 	public function onEnable(){
        		$this->getLogger()->info(TextFormat::BLUE . "HealthOverHead by CookieCode enabled.");
 		$this->getServer()->getPluginManager()->registerEvents($this,$this);
-	    	$this->getServer()->getScheduler()->scheduleRepeatingTask(new Funcion($this),10);
+	    	$this->getServer()->getScheduler()->scheduleRepeatingTask(new Function($this),10);
 	}
     
 	public function onDisable(){
