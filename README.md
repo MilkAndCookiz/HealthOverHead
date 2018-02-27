@@ -5,6 +5,10 @@ HealthOverHead
 
 __An health viewer plugin for Minecraft: Bedrock Edition v1.2.x !__
 
+[![](https://poggit.pmmp.io/shield.state/HealthOverHead)](https://poggit.pmmp.io/p/HealthOverHead)
+
+<a href="https://poggit.pmmp.io/p/HealthOverHead"><img src="https://poggit.pmmp.io/shield.state/HealthOverHead"></a>
+
 Introduction
 -------------
 HealthOverHead is a health viewer plugin for **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** . The code was written by the **CookieCode**.<br>
@@ -28,8 +32,8 @@ If you have any issues with HealthOverHead, do not be afraid to open the issue, 
 
 Installation
 -------------
-* [PocketMine](https://jenkins.pmmp.io/job/PHP-7.2-Aggregate/) - QuartzBE work only with PocketMine software
-* [DevTools](https://github.com/pmmp/PocketMine-DevTools) - Essential to load folders plugins
+* [PocketMine](https://jenkins.pmmp.io/job/PHP-7.2-Aggregate/) - HOH work only with PocketMine software.
+* [DevTools](https://github.com/pmmp/PocketMine-DevTools) - Essential to load folders plugins.
 
 
 NOTE: **The master branch is the only officially supported branch.**
