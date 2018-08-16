@@ -25,7 +25,7 @@ class Main extends PluginBase implements Listener{
 	public function onEnable(){
      $this->getServer()->getLogger()->info(TF::LIGHT_PURPLE . "[HealthOverHead]" . TF::GREEN . " Plugin enabled by CookieCode");
 		$this->getServer()->getPluginManager()->registerEvents($this,$this);
-	  	$this->getServer()->getScheduler()->scheduleRepeatingTask(new HealthTask($this),10);
+	  	$this->getScheduler()->scheduleRepeatingTask(new HealthTask($this),10);
 	}
     
 	public function onDisable(){

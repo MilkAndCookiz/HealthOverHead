@@ -3,7 +3,7 @@
 namespace CookieCode\HealthOverHead;
 
 use pocketmine\{Server, Player};
-use pocketmine\scheduler\PluginTask;
+use pocketmine\scheduler\Task;
 use pocketmine\Plugin;
 use pocketmine\utils\TextFormat as TF;
 
@@ -17,11 +17,10 @@ use pocketmine\utils\TextFormat as TF;
  * Coded by Cookie.
 **/
 
-class HealthTask extends PluginTask {
+class HealthTask extends Task {
 
 	public function __construct($plugin){
-		$this->plugin = $plugin;		
-		parent::__construct($plugin);
+		$this->plugin = $plugin;
 	}
 	
 	public function onRun($currentTick){
