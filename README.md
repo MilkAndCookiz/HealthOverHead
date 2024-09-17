@@ -1,55 +1,34 @@
-HealthOverHead
-===================
+# HealthOverHead [2.0]
+========================
 
+__A health display plugin for Minecraft: Bedrock Edition, now compatible with PocketMine v5.x!__
 
+## Introduction
+HealthOverHead is a plugin for **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** that dynamically displays each player's health percentage above their name. The plugin provides a real-time update of health status, enhancing gameplay by making health information more visible and accessible. Developed and maintained by **MilkAndCookiz**, it offers a simple yet effective enhancement for Minecraft Bedrock Edition.
 
-__An health viewer plugin for Minecraft: Bedrock Edition v1.2.x !__
+Contributions and improvements are welcome as the plugin evolves with new features and configuration options.
 
-[![](https://poggit.pmmp.io/shield.state/HealthOverHead)](https://poggit.pmmp.io/p/HealthOverHead)
+## Objective
+* Update player names with their current health percentage displayed in real-time.
+* Customize the health display color based on the health percentage.
+* Support the latest PocketMine-MP releases.
 
-<a href="https://poggit.pmmp.io/p/HealthOverHead"><img src="https://poggit.pmmp.io/shield.state/HealthOverHead"></a>
+## Help & Support
+If you encounter any issues, feel free to open a ticket on GitHub! We are happy to help troubleshoot and provide support for setting up and configuring the plugin.
 
-Introduction
--------------
-HealthOverHead is a health viewer plugin for **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** . The code was written by the **CookieCode**.<br>
+## Installation
+1. **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** - HealthOverHead works only with the PocketMine server software.
+2. **[DevTools](https://github.com/pmmp/PocketMine-DevTools)** - Used to load and develop plugins from folders.
 
+*Important Note:* 
+The master branch is the officially supported and stable version. Other branches may contain experimental features and should be used with caution.
 
+## Features in Action
 
-However, HealthOverHead still has a long way to go. We welcome contributions.
+### Example 1: Full Health
+When a player has full health, their name tag displays in green with the health percentage shown:
+![Full Health Example](https://cdn.discordapp.com/attachments/766416908089163786/1285509851245711403/Screenshot_20240917_095236_Minecraft.jpg?ex=66ea87d8&is=66e93658&hm=5ab0f650002cca834d3308ff1ce74bdd27489fb2bc9939a775e69f88683aa6c3&)
 
-Objective
--------------
-
-* Be able to configure the plugin.
-* Add compatibility with PurePerms.
-
-
-Help & Support
--------------
-
-
-If you have any issues with HealthOverHead, do not be afraid to open the issue, we will try to help you ðŸ˜€
-
-Installation
--------------
-* [PocketMine](https://jenkins.pmmp.io/job/PHP-7.2-Aggregate/) - HOH work only with PocketMine software.
-* [DevTools](https://github.com/pmmp/PocketMine-DevTools) - Essential to load folders plugins.
-
-
-NOTE: **The master branch is the only officially supported branch.**
-_All other branches are in testing and may be unstable. Do not use builds from other branches unless you are sure you understand the risks._
-
-License
--------------
-	This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
-
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+### Example 2: Low Health
+When a player's health drops below 25%, their name tag displays in red:
+![Low Health Example](https://cdn.discordapp.com/attachments/766416908089163786/1285509742470365230/Screenshot_77.png?ex=66ea87be&is=66e9363e&hm=376de061c8f5f195ac360a0b0c061b70ce4f15392f03c0072d43e114f39d99f8&)

@@ -1,5 +1,6 @@
 name: HealthOverHead
-author: CookieCode
-api: [4.0.0]
+main: HealthOverHead\Main
 version: 2.0.0
-main: CookieCode\HealthOverHead\Main
+author: MilkAndCookiz
+api: ["5.0.0"]
+description: "A health percentage display above players name."
